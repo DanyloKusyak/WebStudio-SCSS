@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    color: var(--main-text);
+}
+
+div.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button>svg,
+button>span {
+    vertical-align: middle;
+}
+
+button>span {
+    padding-right: 7px;
+}

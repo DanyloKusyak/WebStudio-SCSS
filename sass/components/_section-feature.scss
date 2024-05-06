@@ -1,0 +1,58 @@
+.section-feature {
+    padding: 94px 0;
+}
+
+.section-feature-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.section-feature-list-item::before {
+    content: '';
+    display: block;
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.antenna::before {
+    background: url("../images/antenna1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+}
+
+.clock::before {
+    background: url("../images/clock1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+}
+
+.diagram::before {
+    background: url("../images/diagram1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+}
+
+.astronaut::before {
+    background: url("../images/astronaut1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+}
+
+
+
+
+.section-feature-title {
+    color: var(--gray-text);
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+    word-wrap: break-word;
+    line-height: 1.17;
+    margin-bottom: 10px;
+}
+
+.section-feature-text {
+
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    word-wrap: break-word;
+}

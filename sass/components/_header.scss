@@ -1,0 +1,149 @@
+.header {
+    padding: 25px 0;
+    border-bottom: #ECECEC 1px solid;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-logo-web {
+    color: var(--blue-back);
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    word-wrap: break-word;
+    margin-right: -5px;
+}
+
+.header-logo-studio {
+    color: black;
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    word-wrap: break-word;
+}
+
+.navigation {
+    color: var(--gray-text);
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+}
+
+.navigation-link {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.navigation-link::after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 0;
+    border-bottom: 4px solid var(--blue-back);
+    border-radius: 2px;
+    height: 100%;
+    width: 0;
+    transition: all 0.5s;
+}
+
+@keyframes navigation_underline {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.navigation-link:hover:after {
+    /* width: 100%; */
+    animation: navigation_underline 500ms cubic-bezier(0.250, 0.250, 0.695, 0.490) 0s 1 normal forwards;
+}
+
+.contact-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.navigation-link:hover,
+.contact-link:hover {
+    color: var(--blue-back);
+}
+
+.contact-link-svg {
+    fill: var(--main-text);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover .contact-link-svg {
+    fill: var(--blue-back);
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.navigation-list-item {
+    margin-left: 50px;
+}
+
+.contact-block {
+    display: flex;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+}
+
+.contact-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.contact-list-item {
+    margin-left: 50px;
+}
