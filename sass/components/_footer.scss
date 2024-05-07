@@ -1,12 +1,10 @@
 .footer {
     padding: 60px 0;
     background-color: var(--footer-back);
-}
-
-.footer .container {
-    display: flex;
-    /* flex-direction: column; */
-    gap: 95px;
+    .container {
+        display: flex;
+        gap: 95px;
+    }
 }
 
 .footer-logo {
@@ -62,6 +60,10 @@
     transition-property: background-color, border-radius;
     transition-duration: 1000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: var(--blue-back);
+        border-radius: 50%;
+    }
 }
 
 .footer-social-list__svg {
@@ -69,14 +71,6 @@
     height: 20px;
     fill: white;
 }
-
-
-
-.footer-social-list__link:hover {
-    background-color: var(--blue-back);
-    border-radius: 50%;
-}
-
 
 .footer-contact {
     color: rgba(255, 255, 255, 0.60);
