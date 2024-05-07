@@ -1,11 +1,13 @@
 .header {
     padding: 25px 0;
     border-bottom: #ECECEC 1px solid;
-}
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
 
 .header-block {
@@ -53,20 +55,24 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    &::after {
+        content: "";
+        position: absolute;
+        top: 33px;
+        left: 0;
+        border-bottom: 4px solid var(--blue-back);
+        border-radius: 2px;
+        height: 100%;
+        width: 0;
+        transition: all 0.5s;
+    }
+    &:hover:after {
+        /* width: 100%; */
+        animation: navigation_underline 500ms cubic-bezier(0.250, 0.250, 0.695, 0.490) 0s 1 normal forwards;
+    }
 }
 
-.navigation-link::after {
-    content: "";
-    position: absolute;
-    top: 33px;
-    left: 0;
-    border-bottom: 4px solid var(--blue-back);
-    border-radius: 2px;
-    height: 100%;
-    width: 0;
-    transition: all 0.5s;
-}
+
 
 @keyframes navigation_underline {
     0% {
@@ -90,10 +96,7 @@
     }
 }
 
-.navigation-link:hover:after {
-    /* width: 100%; */
-    animation: navigation_underline 500ms cubic-bezier(0.250, 0.250, 0.695, 0.490) 0s 1 normal forwards;
-}
+
 
 .contact-link {
     display: flex;
@@ -102,13 +105,16 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover {
+        color: var(--blue-back);
+    }
+    &:hover .contact-link-svg {
+        fill: var(--blue-back);
+    }
 }
 
-.navigation-link:hover,
-.contact-link:hover {
-    color: var(--blue-back);
-}
+// .navigation-link:hover,
+
 
 .contact-link-svg {
     fill: var(--main-text);
@@ -117,9 +123,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover .contact-link-svg {
-    fill: var(--blue-back);
-}
+
 
 .navigation-list {
     display: flex;
