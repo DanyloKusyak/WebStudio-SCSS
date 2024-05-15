@@ -2,7 +2,7 @@
     text-align: center;
 }
 .section-clients-title {
-    color: var(--gray-text);
+    color: $gray-text;
     font-size: 36px;
     font-family: Roboto;
     font-weight: 700;
@@ -23,7 +23,7 @@
 
 
 .section-clients-list__link {
-    border: var(--icon-default) solid 1px;
+    border: $icon-default solid 1px;
     border-radius: 4px;
     display: flex;
     height: 92px;
@@ -37,16 +37,16 @@
 }
 
 .section-clients-list__link:hover {
-    border-color: var(--blue-back);
+    border-color: $blue-back;
 }
 
 .clients-list__svg {
-    fill: var(--icon-default);
+    fill: $icon-default;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-clients-list__link:hover .clients-list__svg {
-    fill: var(--blue-back);
+    fill: $blue-back;
 }

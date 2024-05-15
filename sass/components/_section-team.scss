@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 .section-team-title {
-    color: var(--gray-text);
+    color: $gray-text;
     font-size: 36px;
     font-family: Roboto;
     font-weight: 700;
@@ -27,7 +27,7 @@
     margin-bottom: 50px;
 }
 .section-team-item-title {
-    color: var(--gray-text);
+    color: $gray-text;
     font-size: 16px;
     font-family: Roboto;
     font-weight: 500;
@@ -69,14 +69,14 @@
 }
 
 .team-icon-list__link:hover {
-    background-color: var(--blue-back);
+    background-color: $blue-back;
     border-radius: 50%;
 }
 
 .team-list__svg {
     width: 20px;
     height: 20px;
-    fill: var(--icon-default);
+    fill: $icon-default;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
