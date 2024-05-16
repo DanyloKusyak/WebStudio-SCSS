@@ -59,9 +59,6 @@ button > span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 .header__navigation {
   display: flex;
@@ -462,13 +459,12 @@ figcaption {
   padding: 60px 0;
   background-color: #2F303A;
 }
-.footer .container {
+.footer__container {
   display: flex;
   gap: 95px;
 }
-
-.footer-text {
-  color: white;
+.footer__contact {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-family: Roboto;
   font-weight: 400;
@@ -476,16 +472,27 @@ figcaption {
   letter-spacing: 0.42px;
   word-wrap: break-word;
 }
-
-.footer-social-list {
+.footer__contact--white {
+  color: white;
+  margin-top: 20px;
+}
+.footer__social-text {
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.footer__social-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
-
-.footer-social-list__link {
+.footer__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -497,38 +504,30 @@ figcaption {
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-list__link:hover {
+.footer__social-link:hover {
   background-color: #2196F3;
   border-radius: 50%;
 }
-
-.footer-social-list__svg {
+.footer__social-svg {
   width: 20px;
   height: 20px;
   fill: white;
 }
-
-.footer-contact {
+.footer__form {
+  margin-top: 20px;
+  display: flex;
+}
+.footer__input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-right: 12px;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-  word-wrap: break-word;
 }
-
-.footer-social-text {
-  color: white;
-  font-size: 14px;
-  font-family: Roboto;
-  font-weight: 700;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-
-.footer-btn {
+.footer__btn {
   color: white;
   font-size: 16px;
   font-family: Roboto;
@@ -542,22 +541,6 @@ figcaption {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
-
-.footer-input {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  padding: 16px;
-  font-size: 16px;
-  line-height: 1.25;
-  margin-right: 12px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-form {
-  margin-top: 20px;
-  display: flex;
 }
 
 .backdrop {

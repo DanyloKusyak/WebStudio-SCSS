@@ -1,107 +1,103 @@
 .footer {
     padding: 60px 0;
     background-color: $footer-back;
-    .container {
+
+    &__container {
         display: flex;
         gap: 95px;
     }
-}
 
-// .footer-logo {
-//     margin-bottom: 20px;
-// }
-
-
-
-
-.footer-text {
-    color: white;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-    word-wrap: break-word;
-}
-
-.footer-social-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.footer-social-list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition-property: background-color, border-radius;
-    transition-duration: 1000ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-        background-color: $blue-back;
-        border-radius: 50%;
+    &__contact {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+        word-wrap: break-word;
     }
+
+    &__contact--white {
+        color: white;
+        margin-top: 20px;
+    }
+
+    &__social-text {
+        color: white;
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 700;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    &__social-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    &__social-item {}
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition-property: background-color, border-radius;
+        transition-duration: 1000ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            background-color: $blue-back;
+            border-radius: 50%;
+        }
+
+    }
+
+    &__social-svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+
+    &__form {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    &__input {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        padding: 16px;
+        font-size: 16px;
+        line-height: 1.25;
+        margin-right: 12px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__btn {
+        color: white;
+        font-size: 16px;
+        font-family: Roboto;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        word-wrap: break-word;
+        border: 0;
+        padding: 10px 32px;
+        border-radius: 4px;
+        background-color: $blue-back;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
 }
 
-.footer-social-list__svg {
-    width: 20px;
-    height: 20px;
-    fill: white;
-}
-
-.footer-contact {
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-    word-wrap: break-word;
-}
-
-.footer-social-text {
-    color: white;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 700;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-
-.footer-btn {
-    color: white;
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    word-wrap: break-word;
-    border: 0;
-    padding: 10px 32px;
-    border-radius: 4px;
-    background-color: $blue-back;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-}
-.footer-input {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    padding: 16px;
-    font-size: 16px;
-    line-height: 1.25;
-    margin-right: 12px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-form {
-    margin-top: 20px;
-    display: flex;
-}
