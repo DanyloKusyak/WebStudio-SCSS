@@ -1,52 +1,59 @@
-.section-clients .container {
-    text-align: center;
-}
-.section-clients-title {
-    color: $gray-text;
-    font-size: 36px;
-    font-family: Roboto;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    word-wrap: break-word;
-    margin-bottom: 50px;
-}
-.section-clients {
+.clients {
     padding-top: 73px;
     padding-bottom: 94px;
-}
-.section-clients-list {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-}
 
 
-.section-clients-list__link {
-    border: $icon-default solid 1px;
-    border-radius: 4px;
-    display: flex;
-    height: 92px;
-    width: 170px;
-    align-items: center;
-    justify-content: center;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__container {
+        text-align: center;
+    }
 
-}
+    &__title {
+        color: $gray-text;
+        font-size: 36px;
+        font-family: Roboto;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+        word-wrap: break-word;
+        margin-bottom: 50px;
+    }
 
-.section-clients-list__link:hover {
-    border-color: $blue-back;
-}
 
-.clients-list__svg {
-    fill: $icon-default;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__list {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
 
-.section-clients-list__link:hover .clients-list__svg {
-    fill: $blue-back;
+
+    &__link {
+        border: $icon-default solid 1px;
+        border-radius: 4px;
+        display: flex;
+        height: 92px;
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__link:hover {
+        border-color: $blue-back;
+    }
+
+    &__svg {
+        fill: $icon-default;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    &__link:hover .clients__svg {
+        fill: $blue-back;
+    }
+
 }
