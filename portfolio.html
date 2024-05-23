@@ -20,28 +20,28 @@ __<!DOCTYPE html>
 
 <body>
     <header class="header">
-        <div class="header__container container">
-            <div class="header__navigation">
-                <a href="#" class="logo">
-                    <span class="logo__part1">
+        <div class="container header__container">
+            <div class="header-spacer">
+                <a href="#" class="logo header-spacer__logo">
+                    <span class="logo__web header-spacer__logo--web">
                         Web
                     </span>
-                    <span class="logo__part2">
+                    <span class="logo__studio header-spacer__logo--studio">
                         Studio
                     </span>
                 </a>
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a href="index.html" class="header__menu-link">Студія
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item ">
+                            <a href="index.html" class="navigation-list__link">Студія
                             </a>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="portfolio.html" class="header__menu-link">Портфоліо
+                        <li class="navigation-list__item  navigation-list__item--active">
+                            <a href="portfolio.html" class="navigation-list__link">Портфоліо
                             </a>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#contact" class="header__menu-link">Контакти
+                        <li class="navigation-list__item">
+                            <a href="#contact" class="navigation-list__link">Контакти
                             </a>
                         </li>
                     </ul>
@@ -49,6 +49,7 @@ __<!DOCTYPE html>
                 </nav>
 
             </div>
+
 
             <div class="header__contact">
 
@@ -263,15 +264,17 @@ __<!DOCTYPE html>
     <footer class="footer">
         <div class="footer__container container">
 
-            <div>
-                <div class="logo">
-                    <span class="logo__part1">
-                        Web
-                    </span>
-                    <span class="logo__part2 logo__part2--white">
-                        Studio
-                    </span>
-                </div>
+            <div  class="footer-spacer">
+                <!-- <div class="logo"> -->
+                    <a href="#" class="logo footer-spacer__logo">
+                        <span class="logo__web footer-spacer__logo--web">
+                            Web
+                        </span>
+                        <span class="logo__studio footer-spacer__logo--studio">
+                            Studio
+                        </span>
+                    </a>
+                <!-- </div> -->
 
                 <p class="footer__contact footer__contact--white" id="contact">
                     м. Київ, пр-т Лесі Українки, 26
