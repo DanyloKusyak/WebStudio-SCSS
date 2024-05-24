@@ -301,6 +301,37 @@ button > span {
   font-weight: 700;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: background-color, border-radius;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__link:hover {
+  background-color: #2196F3;
+}
+.social-list__svg {
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__link:hover .social-list__svg {
+  fill: white;
+}
+
 .team {
   padding: 94px 0;
   background-color: #F5F4FA;
@@ -348,36 +379,8 @@ button > span {
   word-wrap: break-word;
   margin-bottom: 16px;
 }
-.team__list-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.team__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  transition-property: background-color, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team__link:hover {
-  background-color: #2196F3;
-  border-radius: 50%;
-}
-.team__link:hover .team__svg {
-  fill: white;
-}
-.team__svg {
-  width: 20px;
-  height: 20px;
+.team__social-list--fill {
   fill: #AFB1B8;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -457,32 +460,13 @@ button > span {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.footer__social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.footer__social-list--margin20 {
   margin-top: 20px;
 }
-.footer__social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.footer__social-list--dark {
   background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color, border-radius;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__social-link:hover {
-  background-color: #2196F3;
-  border-radius: 50%;
-}
-.footer__social-svg {
-  width: 20px;
-  height: 20px;
+.footer__social-list--fill {
   fill: white;
 }
 .footer__form {
