@@ -4,6 +4,10 @@
     justify-content: center;
     gap: 10px;
 
+    &--footer {
+        justify-content: left;
+    }
+
     &__link {
         display: flex;
         align-items: center;
@@ -13,7 +17,7 @@
         border-radius: 50%;
         transition-property: background-color, border-radius;
         transition-duration: 1000ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: $cubic;
 
         &:hover {
             background-color: $blue-back;
@@ -26,12 +30,23 @@
         height: 20px;
         transition-property: fill;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: $cubic;
     }
 
 
     &__link:hover .social-list__svg {
-        fill: white;
+        fill: $white;
     }
 
+    &__svg--team {
+        fill: $icon-default;
+    }
+
+    &__link--footer {
+        background-color: $footer-social-back;
+    }
+
+    &__svg--footer {
+        fill: $white;
+    }
 }

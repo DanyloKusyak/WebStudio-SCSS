@@ -1,9 +1,12 @@
 .feature {
     padding: 94px 0;
-    &__list {
+   
+}
+.feature-list {
+     
         display: flex;
         column-gap: 30px;
-    }
+    
     &__item::before {
         content: '';
         display: block;
@@ -13,19 +16,19 @@
         border-radius: 4px;
     }
     &__item--antenna::before {
-        background: url("../images/antenna1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+        background: url("../images/antenna1.svg") no-repeat 50% 50% / 70px 70px $feature-item-back;
     }
 
     &__item--clock::before {
-        background: url("../images/clock1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+        background: url("../images/clock1.svg") no-repeat 50% 50% / 70px 70px $feature-item-back;
     }
 
     &__item--diagram::before {
-        background: url("../images/diagram1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+        background: url("../images/diagram1.svg") no-repeat 50% 50% / 70px 70px $feature-item-back;
     }
 
     &__item--astronaut::before {
-        background: url("../images/astronaut1.svg") no-repeat 50% 50% / 70px 70px #F5F4FA;
+        background: url("../images/astronaut1.svg") no-repeat 50% 50% / 70px 70px $feature-item-back;
     }
     &__title {
         color: $gray-text;
