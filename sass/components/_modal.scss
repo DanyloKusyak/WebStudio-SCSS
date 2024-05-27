@@ -21,50 +21,55 @@
         transform: translate(-50%, -50%) scale(0);
     }
 
-    &__form {
-        max-width: 528px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background-color: $white;
-        padding: 40px;
-        min-width: 400px;
-        min-height: 300px;
-        border-radius: 10px;
-        z-index: 11;
-        transform: translate(-50%, -50%) scale(1);
-        transition: opacity 250ms $cubic 1000ms;
-    }
+
+
+
+  
+}
+.modal-form {
+    max-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $white;
+    padding: 40px;
+    min-width: 400px;
+    min-height: 300px;
+    border-radius: 10px;
+    z-index: 11;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 250ms $cubic 1000ms;
+
+
 
     &__close {
         position: absolute;
         top: 10px;
         right: 10px;
-        height: 30px;
-        width: 30px;
-        border-color: rgba(0, 0, 0, 0.1);
+        height: 32px;
+        width: 32px;
+        border-color:$button-shadow;
         border-width: 1px;
         border-style: solid;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         cursor: pointer;
-        transition-property: background-color, color, box-shadow;
+        transition-property: background-color, color, box-shadow, border-color;
         transition-duration: 250ms;
         transition-timing-function: $cubic;
         transition-delay: 0;
     }
-
-    &__close:hover .modal__icon {
-        fill: #2196F3;
+    &__close:hover {
+        border-color:$blue-back;
+    }
+    &__close:hover .modal-form__icon {
+        fill: $blue-back;
     }
 
     &__header {
         font-family: 'Roboto';
         font-size: 20px;
         font-weight: 700;
-        color: #212121;
+        color: $gray-text;
         letter-spacing: 3%;
         padding-bottom: 10px;
     }
@@ -76,11 +81,11 @@
         font-family: 'Roboto';
         font-size: 12px;
         font-weight: 400;
-        color: #757575;
+        color: $main-text;
     }
 
     &__label:has(input:focus) svg {
-        fill: #2196F3;
+        fill: $blue-back;
     }
 
     &__icon {
@@ -88,7 +93,7 @@
         top: 50%;
         left: 10px;
         transform: translateY(-50%);
-        fill: #212121;
+        fill: $gray-text;
     }
 
     &__input {
@@ -102,11 +107,10 @@
         transition-property: background-color, color, box-shadow;
         transition-duration: 250ms;
         transition-timing-function: $cubic;
-        transition-delay: 0;
     }
 
     &__input:focus {
-        border-color: #2196F3;
+        border-color: $blue-back;
         outline: none;
     }
 
@@ -114,7 +118,7 @@
         font-family: 'Roboto';
         font-size: 14px;
         font-weight: 400;
-        color: #757575;
+        color: $main-text;
         letter-spacing: 0.7px;
         line-height: 1.71;
         display: flex;
@@ -141,28 +145,9 @@
     }
 
     &__checkbox-link {
-        color: #2196F3;
+        color: $blue-back;
         text-decoration: underline;
         padding-left: 4px;
-
-    }
-
-    &__btn {
-        display: block;
-        padding: 10px 20px;
-        background-color: #2196F3;
-
-        color: #FFFFFF;
-        margin: 0 auto;
-        border-radius: 5px;
-        cursor: pointer;
-        border: none;
-        font-family: 'Roboto';
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 6%;
-        line-height: 1.9;
-        margin-top: 30px;
 
     }
 }
