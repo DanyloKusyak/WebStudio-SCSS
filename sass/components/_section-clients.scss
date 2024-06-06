@@ -1,6 +1,9 @@
 .clients {
+    @include font2(Roboto, break-word);
     padding-top: 73px;
     padding-bottom: 94px;
+    font-size: 14px;
+
 
 
     &__container {
@@ -8,35 +11,32 @@
     }
 
     &__title {
+        @include font4(36px, 1.08px, normal, 700);
+        @include font2(Roboto, break-word);
         color: $gray-text;
-        font-size: 36px;
-        font-family: Roboto;
-        font-weight: 700;
-        letter-spacing: 1.08px;
-        word-wrap: break-word;
         margin-bottom: 50px;
     }
 
 
 
 }
+
 .clients-list {
-   
-        display: flex;
-        gap: 30px;
-        align-items: center;
-        justify-content: center;
+
+    @extend %flex-center-center;
+    gap: 30px;
+
 
 
 
     &__link {
+        @extend %flex-center-center;
         border: $icon-default solid 1px;
         border-radius: 4px;
-        display: flex;
+
         height: 92px;
         width: 170px;
-        align-items: center;
-        justify-content: center;
+
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: $cubic;

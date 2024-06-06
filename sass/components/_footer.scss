@@ -5,79 +5,75 @@
     &__container {
         display: flex;
     }
-  
+
 }
 
-.footer-contacts{
-    flex-basis:25%;
+.footer-contacts {
+    flex-basis: 25%;
+
     &__logo--studio {
         color: $white;
     }
 }
+
 .address {
-     
-        color:$address-color;
-        font-size: 14px;
-        font-family: Roboto;
-        font-weight: 400;
-        line-height: 1.71;
-        letter-spacing: 0.42px;
-        word-wrap: break-word;
+    @include font4 (14px, normal, 1.71, 400);
+    @include font2(Roboto, break-word);
+    color: $address-color;
     
+
     &__city {
         color: $white;
         margin-top: 20px;
     }
 }
+
 .footer-join {
-    flex-basis:25%;
+    flex-basis: 25%;
+
     &__title {
+        @include font4(14px, normal, normal, 700);
+        @include font2(Roboto, break-word);
         color: $white;
-        font-size: 14px;
-        font-family: Roboto;
-        font-weight: 700;
-        line-height: 1.71;
-        letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
 
 }
+
 .footer-subscribe {
-    flex-basis:50%;
+    flex-basis: 50%;
+
     &__title {
+        @include font4(14px, normal, normal, 700);
+        @include font2(Roboto, break-word);
         color: $white;
-        font-size: 14px;
-        font-family: Roboto;
-        font-weight: 700;
-        line-height: 1.71;
-        letter-spacing: 0.42px;
         text-transform: uppercase;
     }
 }
+
 .footer-form {
-    
-        margin-top: 20px;
-        display: flex;
-    
+
+    margin-top: 20px;
+    display: flex;
+
 
     &__input {
+        @include font4(16px, normal, 1.25, normal);
         background: transparent;
         border: 1px solid $input-border-color;
         border-radius: 4px;
         padding: 16px;
-        font-size: 16px;
-        line-height: 1.25;
         margin-right: 12px;
         color: $input-color;
         flex-basis: 60%;
     }
 
-  
+
     &__svg {
         width: 20px;
         height: 20px;
-       fill: $white;
+        fill: $white;
     }
 
 }

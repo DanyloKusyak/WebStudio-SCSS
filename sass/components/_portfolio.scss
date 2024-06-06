@@ -2,9 +2,7 @@
     padding: 95px 0;
 
     &__filters {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex-center-center;
         padding-bottom: 51px;
     }
 
@@ -13,7 +11,7 @@
         column-gap: 8px;
     }
 
-    
+
 }
 
 
@@ -42,13 +40,14 @@
 }
 
 .portfolio-list {
-    
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        row-gap: 30px;
-        justify-content: space-between;
-    
+
+
+    flex-wrap: wrap;
+    @extend %flex-between-center;
+    margin: 0 auto;
+    row-gap: 30px;
+
+
 
 
     &__item {
@@ -94,13 +93,8 @@
         transition: transform 200ms ease-out;
         color: #FFF;
         background-color: rgba(33, 150, 243, 0.9);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-        letter-spacing: 0.54;
-        line-height: 1.6;
-        font-weight: 400;
+        @extend %flex-center-center;
+        @include font4(18px, 0.54, 1.6, 400);
         padding: 22px;
     }
 
@@ -108,20 +102,13 @@
         padding: 23px;
     }
 
-
     &__title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 6%;
+        @include font4(18px, 6%, 2, 700);
         color: $gray-text;
     }
 
     &__text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.875;
-        letter-spacing: 3%;
+        @include font4(16px, 3%, 1.875, 400);
         color: $main-text;
     }
 }

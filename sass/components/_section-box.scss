@@ -4,24 +4,23 @@
     &__container {
         text-align: center;
     }
+
     &__title {
+        @include font4(36px, 1.08px, normal, 700);
+        @include font2(Roboto, break-word);
         color: $gray-text;
-        font-size: 36px;
-        font-family: Roboto;
-        font-weight: 700;
-        letter-spacing: 1.08px;
-        word-wrap: break-word;
         margin-bottom: 50px;
     }
 
- 
+
 }
+
 .box-list {
-    
-     
-        display: flex;
-        justify-content: space-between;
-    
+
+
+    display: flex;
+    justify-content: space-between;
+
 
     &__item {
         position: relative;
@@ -36,6 +35,7 @@
     }
 
     &__caption {
+        @include font4(14px, normal, normal, 700);
         position: absolute;
         z-index: 5;
         left: 0;
@@ -46,7 +46,5 @@
         background-color: $box-back;
         text-transform: uppercase;
         bottom: 0;
-        font-size: 14px;
-        font-weight: 700;
     }
 }

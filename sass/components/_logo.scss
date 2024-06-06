@@ -1,20 +1,15 @@
 .logo {
     &__web {
+        @include font4(26px, 0.78px, normal, 700);
+        @include font2(Raleway, break-word);
         color: $blue-back;
-        font-size: 26px;
-        font-family: Raleway;
-        font-weight: 700;
-        letter-spacing: 0.78px;
-        word-wrap: break-word;
         margin-right: -5px;
     }
 
     &__studio {
-        font-size: 26px;
-        font-family: Raleway;
-        font-weight: 700;
-        letter-spacing: 0.78px;
-        word-wrap: break-word;
+        @include font4(26px, 0.78px, normal, 700);
+        @include font2(Raleway, break-word);
+
     }
 
     &__studio--header {

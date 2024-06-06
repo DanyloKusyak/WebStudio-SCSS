@@ -1,12 +1,13 @@
 .feature {
     padding: 94px 0;
-   
+
 }
+
 .feature-list {
-     
-        display: flex;
-        column-gap: 30px;
-    
+
+    display: flex;
+    column-gap: 30px;
+
     &__item::before {
         content: '';
         display: block;
@@ -15,6 +16,7 @@
         margin-bottom: 30px;
         border-radius: 4px;
     }
+
     &__item--antenna::before {
         background: url("../images/antenna1.svg") no-repeat 50% 50% / 70px 70px $feature-item-back;
     }
@@ -30,23 +32,17 @@
     &__item--astronaut::before {
         background: url("../images/astronaut1.svg") no-repeat 50% 50% / 70px 70px $feature-item-back;
     }
+
     &__title {
+        @include font4(14px, normal, 1.17, 700);
+        @include font2(Roboto, break-word);
         color: $gray-text;
-        font-size: 14px;
-        font-family: Roboto;
-        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.42px;
-        word-wrap: break-word;
-        line-height: 1.17;
         margin-bottom: 10px;
     }
+
     &__text {
-        font-size: 14px;
-        font-family: Roboto;
-        font-weight: 400;
-        line-height: 1.71;
-        letter-spacing: 0.42px;
-        word-wrap: break-word;
+        @include font4(14px, normal, normal, 400);
+        @include font2(Roboto, break-word);
     }
 }
