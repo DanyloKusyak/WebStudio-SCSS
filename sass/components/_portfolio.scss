@@ -10,12 +10,7 @@
         display: flex;
         column-gap: 8px;
     }
-
-
 }
-
-
-
 
 @keyframes overlay_show {
     0% {
@@ -40,15 +35,10 @@
 }
 
 .portfolio-list {
-
-
     flex-wrap: wrap;
     @extend %flex-between-center;
     margin: 0 auto;
     row-gap: 30px;
-
-
-
 
     &__item {
         border: #EEEEEE 1px solid;
@@ -57,9 +47,7 @@
         transition-duration: 250ms;
         transition-timing-function: $cubic;
 
-
     }
-
 
     &__item:hover {
         box-shadow: 1px 4px rgba(0, 0, 0, 0.16);

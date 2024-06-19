@@ -1,0 +1,239 @@
+.menu-button {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    div.container {
+        width: 100%;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+
+
+
+    .header-contact {
+        display: none;
+    }
+
+    .menu-button {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        margin-right: 22px;
+        border-bottom: 3px solid #000000;
+        display: block;
+    
+    }
+
+    .menu-button:before,
+    .menu-button:after {
+        content: '';
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background-color: #000000;
+        transition: transform 0.5s;
+    }
+
+    .menu-button:before {
+        top: 30%;
+    }
+
+    .menu-button:after {
+        top: 68%;
+    }
+
+    /* Change menu icon */
+    .menu-button.active {
+        border-bottom: none;
+    }
+
+    .menu-button.active:before {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+
+    .menu-button.active:after {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #FFEFBA;
+        transform: translateY(-100%);
+        transition: transform 0.5s;
+
+        &__link {
+            color: #222;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+    }
+
+    .navigation.active {
+        transform: translateY(0);
+        z-index: 5;
+    }
+
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 24px;
+        &__item--active &__link::after {
+            width: 0;
+        }
+        &__link {
+            font-size: 24px;
+        }
+    }
+
+
+    .hero {
+        padding: 125px 0;
+
+        &__title {
+            @include font4(26px, 6%, 1.61, 900);
+        }
+    }
+
+    .feature {
+        padding: 60px 0;
+
+    }
+
+    .feature-list {
+        flex-direction: column;
+        gap: 40px;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__item::before {
+            width: 100%;
+        }
+    }
+
+    .box {
+        display: none;
+    }
+
+    .team {
+        padding: 60px 0;
+
+
+        &__main-title {
+            @include font4(28px, 0.84px, normal, 700);
+            margin-bottom: 28px;
+        }
+
+    }
+
+    .team-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+
+        &__img {
+            width: 100%;
+        }
+
+    }
+
+    .clients {
+        padding: 60px 0;
+
+        &__title {
+            @include font4(28px, 0.84px, normal, 700);
+            margin-bottom: 28px;
+        }
+
+
+    }
+
+    .clients-list {
+        flex-wrap: wrap;
+    }
+
+    .footer__container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .footer-contacts,
+    .footer-subscribe,
+    .footer-join {
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .footer-subscribe {
+        width: 100%;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+    
+    .footer-form__input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .modal-form {
+        width: 98%;
+        min-width: 320px;
+    }
+    .modal-form__header {
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+    }
+    .modal-form__checkbox-text {
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        display: inline;
+        vertical-align:middle ;
+    }
+    .portfolio {
+        padding: 60px 0;
+    }
+    .portfolio-list  {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .portfolio__filters-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -2,10 +2,10 @@
 @import "./utils/placeholders.scss";
 @import "./utils/mixins.scss";
 @import "./base/common";
+@import "./components/navi";
 @import "./components/button";
 @import "./components/logo";
 @import "./components/header";
-@import "./components/navi";
 @import "./components/section-hero";
 @import "./components/section-feature";
 @import "./components/section-box";
@@ -14,3 +14,4 @@
 @import "./components/section-clients";
 @import "./components/footer";
 @import "./components/modal";
+@import "./components/mobile";
