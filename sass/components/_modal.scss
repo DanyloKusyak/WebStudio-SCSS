@@ -33,12 +33,13 @@
     left: 50%;
     background-color: $white;
     padding: 40px;
-    min-width: 400px;
+    min-width: 320px;
     min-height: 300px;
     border-radius: 10px;
     z-index: 11;
     transform: translate(-50%, -50%) scale(1);
     transition: opacity 250ms $cubic 1000ms;
+    width: 98%;
 
 
 
@@ -66,10 +67,12 @@
     }
 
     &__header {
-        @include font4(20px, 3%, normal, 700);
+        text-align: center;
+        @include font4(20px, 1.5, 30px, 700);
         @include font2(Raleway, normal);
         color: $gray-text;
         padding-bottom: 10px;
+        
     }
 
     &__label {
@@ -113,10 +116,11 @@
 
     &__checkbox-text {
         @extend %flex-center;
-        @include font4(14px, 0.7px, 1.71, 400);
+        @include font4(12px, 0.7px, 0.36px, 400);
         @include font2(Roboto, break-word);
         color: $main-text;
-     
+        display: inline;
+        vertical-align: middle;
     }
 
     &__checkbox {

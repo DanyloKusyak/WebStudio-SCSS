@@ -1,0 +1,190 @@
+@media screen and (min-width: 1200px) {
+    div.container {
+        width: 1200px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .header {
+        padding: 25px 0;
+    }
+
+    .header-contact {
+        display: flex;
+    }
+
+
+    .navigation {
+        @include font4(14px, 0.28px, normal, 500);
+        @include font2(Roboto, break-word);
+        color: $gray-text;
+
+        position: relative;
+
+        width: unset;
+        background-color: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+
+    .navigation-list {
+
+        flex-direction: row;
+        gap: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: inherit;
+
+
+        &__item--active &__link::after {
+            width: 100%;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+
+
+    .hero {
+        padding: 200px 0;
+
+        &__title {
+            @include font4(44px, 2.64px, 1.36, 900);
+        }
+    }
+
+    .feature {
+        padding: 94px 0;
+
+    }
+
+    .feature-list {
+        flex-direction: row;
+        gap: 30px;
+
+        &__item {
+            display: block;
+        }
+
+        &__item::before {
+            width: 270px;
+        }
+    }
+
+    .box {
+        display: block;
+    }
+
+    .team {
+        padding: 94px 0;
+
+
+        &__main-title {
+            @include font4(36px, 1.08px, normal, 700);
+            margin-bottom: 50px;
+        }
+
+    }
+
+    .team-list {
+        flex-direction: row;
+        // gap: 30px;
+
+        // &__img {
+        //     width: unset;
+        // }
+
+    }
+
+    .clients {
+
+        padding-top: 73px;
+        padding-bottom: 94px;
+
+        &__title {
+            @include font4(36px, 1.08px, normal, 700);
+            margin-bottom: 50px;
+        }
+
+
+    }
+
+    .clients-list {
+        flex-wrap: unset;
+    }
+
+    .footer__container {
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: unset;
+        gap: unset;
+    }
+
+    .address {
+        text-align: unset;
+    }
+
+    .footer-contacts {
+        flex-basis: 25%;
+        text-align: left;
+    }
+
+    .footer-subscribe {
+        flex-basis: 50%;
+        text-align: left;
+    }
+
+    .footer-join {
+        flex-basis: 25%;
+        text-align: left;
+    }
+
+    .footer-subscribe {
+        width: unset;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        align-items: unset;
+        // gap: unset;
+
+    }
+
+    .footer-form__input {
+        width: unset;
+        margin-right: unset;
+    }
+
+    .modal-form {
+        width: unset;
+        min-width: 400px;
+
+        &__header {
+            @include font4(20px, 1.5, normal, 700);
+        }
+
+        &__checkbox-text {
+            @include font4(14px, 0.7px, 1.71, 400);
+        }
+    }
+
+
+    .portfolio {
+        padding: 94px 0;
+
+        &__filters-list {
+            flex-wrap: unset;
+        }
+    }
+
+    .portfolio-list {
+
+        flex-direction: row;
+        align-items: center;
+    }
+
+}

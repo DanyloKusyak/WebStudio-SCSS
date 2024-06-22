@@ -1,5 +1,5 @@
 .header {
-    padding: 25px 0;
+    padding: 15px 0;
     border-bottom: #ECECEC 1px solid;
 
     &__container {
@@ -14,7 +14,7 @@
 .header-contact {
     @include font4(14px, 0.28px, normal, 500);
     @include font2(Roboto, break-word);
-    display: flex;
+    display: none;
 
 
 

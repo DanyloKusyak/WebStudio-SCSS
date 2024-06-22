@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 95px 0;
+    padding: 60px 0;
 
     &__filters {
         @extend %flex-center-center;
@@ -9,6 +9,7 @@
     &__filters-list {
         display: flex;
         column-gap: 8px;
+        flex-wrap: wrap;
     }
 }
 
@@ -36,7 +37,10 @@
 
 .portfolio-list {
     flex-wrap: wrap;
-    @extend %flex-between-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    flex-direction: column;
     margin: 0 auto;
     row-gap: 30px;
 

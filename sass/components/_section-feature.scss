@@ -1,18 +1,24 @@
 .feature {
-    padding: 94px 0;
+    padding: 60px 0;
 
 }
 
 .feature-list {
-
+    flex-direction: column;
     display: flex;
-    column-gap: 30px;
+    column-gap: 40px;
 
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     &__item::before {
         content: '';
         display: block;
         height: 120px;
-        width: 270px;
+        width: 100%;
         margin-bottom: 30px;
         border-radius: 4px;
     }

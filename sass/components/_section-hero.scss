@@ -1,5 +1,5 @@
 .hero {
-    padding: 200px 0;
+    padding: 125px 0;
     text-align: center;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -10,7 +10,8 @@
     background-size: cover;
 
     &__title {
-        @include font4(44px, 2.64px, 1.36, 900);
+        @include font4(26px, 6%, 1.61, 900);
+
         @include font2(Roboto, break-word);
         color: $white;
         text-transform: uppercase;

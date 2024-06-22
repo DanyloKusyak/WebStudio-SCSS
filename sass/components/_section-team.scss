@@ -1,5 +1,5 @@
 .team {
-    padding: 94px 0;
+    padding: 60px 0;
     background-color: $feature-item-back;
 
     &__container {
@@ -7,10 +7,9 @@
     }
 
     &__main-title {
-        @include font4(36px, 1.08px, normal, 700);
-        @include font2(Roboto, break-word);
+        @include font4(28px, 0.84px, normal, 700);
+        margin-bottom: 28px;
         color: $gray-text;
-        margin-bottom: 50px;
     }
 
 }
@@ -19,7 +18,8 @@
 
     display: flex;
     justify-content: space-between;
-
+    flex-direction: column;
+    gap: 30px;
 
 
 
@@ -33,6 +33,8 @@
 
     &__img {
         margin-bottom: 30px;
+        width: 100%;
+
     }
 
     &__title {

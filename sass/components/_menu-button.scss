@@ -1,0 +1,51 @@
+
+
+
+.menu-button {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 22px;
+    border-bottom: 3px solid #000000;
+    display: block;
+
+}
+
+.menu-button:before,
+.menu-button:after {
+    content: '';
+    width: 24px;
+    height: 3px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    transition: transform 0.5s;
+}
+
+.menu-button:before {
+    top: 30%;
+}
+
+.menu-button:after {
+    top: 68%;
+}
+
+/* Change menu icon */
+.menu-button.active {
+    border-bottom: none;
+}
+
+.menu-button.active:before {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-button.active:after {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}

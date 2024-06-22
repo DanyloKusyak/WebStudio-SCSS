@@ -1,7 +1,6 @@
 .clients {
     @include font2(Roboto, break-word);
-    padding-top: 73px;
-    padding-bottom: 94px;
+    padding: 60px 0;
     font-size: 14px;
 
 
@@ -11,10 +10,12 @@
     }
 
     &__title {
-        @include font4(36px, 1.08px, normal, 700);
+       
         @include font2(Roboto, break-word);
         color: $gray-text;
-        margin-bottom: 50px;
+
+        @include font4(28px, 0.84px, normal, 700);
+            margin-bottom: 28px;
     }
 
 
@@ -22,7 +23,7 @@
 }
 
 .clients-list {
-
+    flex-wrap: wrap;
     @extend %flex-center-center;
     gap: 30px;
 

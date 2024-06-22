@@ -1,17 +1,49 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    div.container {
-        width: 100%;
+    .menu-button {
+        display: none;
     }
 
     .header {
         padding: 18px 0;
     }
 
+
     .header-contact {
+        display: flex;
         flex-direction: column;
         gap: 10px;
     }
+    .navigation {
+        @include font4(14px, 0.28px, normal, 500);
+        @include font2(Roboto, break-word);
+        color: $gray-text;
 
+        position: relative;
+
+        width: unset;
+        background-color: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+
+    .navigation-list {
+
+        flex-direction: row;
+        gap: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: inherit;
+
+
+        &__item--active &__link::after {
+            width: 100%;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+    }
     .hero {
         padding: 100px;
 
@@ -25,11 +57,12 @@
     }
 
     .feature-list {
-
+        flex-direction: row;
         flex-wrap: wrap;
-
+        gap: 30px;
         &__item {
             flex-basis: calc((100% - 30px) /2);
+            display: block;
         }
 
         &__item::before {
@@ -52,10 +85,12 @@
 
         &__main-title {
             @include font4(28px, 0.84px, normal, 600);
+            margin-bottom: 50px;
         }
     }
 
     .team-list {
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
 
@@ -92,6 +127,9 @@
     }
 
     .footer__container {
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: unset;
         flex-wrap: wrap;
         gap: 60px;
     }
@@ -111,6 +149,7 @@
 
     .footer-subscribe {
         flex-basis: 100%;
+        width: unset;
 
         &__title {
             text-align: center;
@@ -125,36 +164,46 @@
 
         &__input {
             width: 450px;
+            margin-right: unset;
         }
     }
 
     .modal-form {
         min-width: 450px;
+        width: unset;
+
+        &__header {
+            text-align: center;
+            font-family: 'Roboto';
+            @include font4(20px, 0.6, normal, 700);
+        }
+    
+       &__checkbox-text {
+            display: inline;
+            vertical-align: middle;
+            @include font4(12px, normal, 0.36, 400);
+        }
     }
 
-    .modal-form__header {
-        text-align: center;
-        line-height: 30px;
-        letter-spacing: 0.6px;
-        font-family: 'Roboto';
-    }
-
-    .modal-form__checkbox-text {
-        font-size: 12px;
-        letter-spacing: 0.36px;
-        display: inline;
-        vertical-align: middle;
-    }
+   
 
     .portfolio {
         padding: 60px 0;
+
+
+        &__filters-list {
+            flex-wrap: unset;
+        }
     }
 
     .portfolio__filters {
         padding-bottom: 30px;
+        
     }
 
     .portfolio-list {
+        flex-direction: row;
+        align-items: center;
         &__item {
             flex-basis: calc((100% - 60px)/2);
         }
