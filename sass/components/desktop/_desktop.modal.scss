@@ -1,0 +1,12 @@
+.modal-form {
+    width: unset;
+    min-width: 400px;
+
+    &__header {
+        @include font4(20px, 1.5, normal, 700);
+    }
+
+    &__checkbox-text {
+        @include font4(14px, 0.7px, 1.71, 400);
+    }
+}

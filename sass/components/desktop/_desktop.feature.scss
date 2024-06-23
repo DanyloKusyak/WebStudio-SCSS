@@ -1,0 +1,17 @@
+.feature {
+    padding: 94px 0;
+
+}
+
+.feature-list {
+    flex-direction: row;
+    gap: 30px;
+
+    &__item {
+        display: block;
+    }
+
+    &__item::before {
+        width: 270px;
+    }
+}

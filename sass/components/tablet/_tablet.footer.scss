@@ -1,0 +1,41 @@
+.footer__container {
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.footer-contacts,
+.footer-join {
+    flex-basis: calc((100% - 60px) / 2);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    text-align: center;
+}
+
+.footer-subscribe {
+    flex-basis: 100%;
+    width: unset;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.footer-form {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__input {
+        width: 450px;
+        margin-right: unset;
+    }
+}

@@ -1,0 +1,21 @@
+.clients {
+    padding: 60px 0;
+
+    &__title {
+        @include font4(28px, 0.84px, normal, 600);
+        margin-bottom: 30px;
+    }
+}
+
+.clients-list {
+    gap: 30px;
+    flex-wrap: wrap;
+
+    &__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+
+    &__link {
+        width: 100%;
+    }
+}

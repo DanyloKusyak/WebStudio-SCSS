@@ -1,0 +1,20 @@
+.team {
+    padding: 94px 0;
+
+
+    &__main-title {
+        @include font4(36px, 1.08px, normal, 700);
+        margin-bottom: 50px;
+    }
+
+}
+
+.team-list {
+    flex-direction: row;
+    // gap: 30px;
+
+    // &__img {
+    //     width: unset;
+    // }
+
+}

@@ -1,0 +1,31 @@
+.navigation {
+    @include font4(14px, 0.28px, normal, 500);
+    @include font2(Roboto, break-word);
+    color: $gray-text;
+
+    position: relative;
+
+    width: unset;
+    background-color: unset;
+    transform: unset;
+    transition: unset;
+}
+
+
+.navigation-list {
+
+    flex-direction: row;
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: inherit;
+
+
+    &__item--active &__link::after {
+        width: 100%;
+    }
+
+    &__link {
+        font-size: 14px;
+    }
+}

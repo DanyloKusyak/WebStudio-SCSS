@@ -1,0 +1,16 @@
+.modal-form {
+    min-width: 450px;
+    width: unset;
+
+    &__header {
+        text-align: center;
+        font-family: 'Roboto';
+        @include font4(20px, 0.6, normal, 700);
+    }
+
+   &__checkbox-text {
+        display: inline;
+        vertical-align: middle;
+        @include font4(12px, normal, 0.36, 400);
+    }
+}

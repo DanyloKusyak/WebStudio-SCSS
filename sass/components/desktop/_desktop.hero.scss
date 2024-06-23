@@ -1,0 +1,7 @@
+.hero {
+    padding: 200px 0;
+
+    &__title {
+        @include font4(44px, 2.64px, 1.36, 900);
+    }
+}

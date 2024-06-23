@@ -1,0 +1,41 @@
+.footer__container {
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: unset;
+    gap: unset;
+}
+
+.address {
+    text-align: unset;
+}
+
+.footer-contacts {
+    flex-basis: 25%;
+    text-align: left;
+}
+
+.footer-subscribe {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.footer-join {
+    flex-basis: 25%;
+    text-align: left;
+}
+
+.footer-subscribe {
+    width: unset;
+}
+
+.footer-form {
+    flex-direction: row;
+    align-items: unset;
+    // gap: unset;
+
+}
+
+.footer-form__input {
+    width: unset;
+    margin-right: unset;
+}

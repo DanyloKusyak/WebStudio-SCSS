@@ -1,0 +1,14 @@
+.portfolio {
+    padding: 94px 0;
+
+    &__filters-list {
+        flex-wrap: unset;
+    }
+}
+
+.portfolio-list {
+
+    flex-direction: row;
+    align-items: center;
+}
+

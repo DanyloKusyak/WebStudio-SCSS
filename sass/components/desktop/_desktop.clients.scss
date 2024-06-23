@@ -1,0 +1,16 @@
+.clients {
+
+    padding-top: 73px;
+    padding-bottom: 94px;
+
+    &__title {
+        @include font4(36px, 1.08px, normal, 700);
+        margin-bottom: 50px;
+    }
+
+
+}
+
+.clients-list {
+    flex-wrap: unset;
+}

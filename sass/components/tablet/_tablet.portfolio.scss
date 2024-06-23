@@ -1,0 +1,22 @@
+
+    .portfolio {
+        padding: 60px 0;
+
+
+        &__filters-list {
+            flex-wrap: unset;
+        }
+    }
+
+    .portfolio__filters {
+        padding-bottom: 30px;
+        
+    }
+
+    .portfolio-list {
+        flex-direction: row;
+        align-items: center;
+        &__item {
+            flex-basis: calc((100% - 60px)/2);
+        }
+    }

@@ -1,0 +1,23 @@
+.team {
+    padding: 60px 0;
+
+    &__main-title {
+        @include font4(28px, 0.84px, normal, 600);
+        margin-bottom: 50px;
+    }
+}
+
+.team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__img {
+
+        width: 100%;
+    }
+}
