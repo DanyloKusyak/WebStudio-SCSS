@@ -787,6 +787,9 @@ button > span {
     font-weight: 700;
     margin-bottom: 50px;
   }
+  .clients__link {
+    width: 170px;
+  }
   .clients-list {
     flex-wrap: unset;
   }

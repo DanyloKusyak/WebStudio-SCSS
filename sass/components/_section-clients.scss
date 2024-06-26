@@ -10,12 +10,12 @@
     }
 
     &__title {
-       
+
         @include font2(Roboto, break-word);
         color: $gray-text;
 
         @include font4(28px, 0.84px, normal, 700);
-            margin-bottom: 28px;
+        margin-bottom: 28px;
     }
 
 
@@ -28,7 +28,9 @@
     gap: 30px;
 
 
-
+    &__item {
+        flex-basis: calc((100% - 65px) / 2);
+    }
 
     &__link {
         @extend %flex-center-center;
@@ -36,7 +38,7 @@
         border-radius: 4px;
 
         height: 92px;
-        width: 170px;
+        // width: 170px;
 
         transition-property: border-color;
         transition-duration: 250ms;

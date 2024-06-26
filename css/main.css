@@ -313,6 +313,7 @@ button > span {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  row-gap: 35px;
 }
 .feature-list__item {
   display: flex;
@@ -523,11 +524,13 @@ button > span {
   flex-wrap: wrap;
   gap: 30px;
 }
+.clients-list__item {
+  flex-basis: calc((100% - 65px) / 2);
+}
 .clients-list__link {
   border: #AFB1B8 solid 1px;
   border-radius: 4px;
   height: 92px;
-  width: 170px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1054,6 +1057,9 @@ button > span {
     line-height: normal;
     font-weight: 700;
     margin-bottom: 50px;
+  }
+  .clients__link {
+    width: 170px;
   }
   .clients-list {
     flex-wrap: unset;
