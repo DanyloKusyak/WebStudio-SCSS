@@ -30,7 +30,7 @@
         margin-right: 22px;
         border-bottom: 3px solid #000000;
         display: block;
-    
+
     }
 
     .menu-button:before,
@@ -72,7 +72,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #FFEFBA;
         transform: translateY(-100%);
         transition: transform 0.5s;
 
@@ -87,6 +86,8 @@
     .navigation.active {
         transform: translateY(0);
         z-index: 5;
+
+
     }
 
     .navigation-list {
@@ -96,13 +97,18 @@
         padding-top: 50px;
         padding-bottom: 50px;
         font-size: 24px;
+
         &__item--active &__link::after {
             width: 0;
         }
+
         &__link {
             font-size: 24px;
         }
     }
+
+    
+    
 
 
     .hero {
@@ -193,6 +199,7 @@
         text-align: center;
         flex-basis: 100%;
     }
+
     .footer-subscribe {
         width: 100%;
     }
@@ -203,7 +210,7 @@
         gap: 20px;
 
     }
-    
+
     .footer-form__input {
         width: 100%;
         margin-right: 0;
@@ -213,25 +220,30 @@
         width: 98%;
         min-width: 320px;
     }
+
     .modal-form__header {
         text-align: center;
         line-height: 30px;
         letter-spacing: 0.6px;
     }
+
     .modal-form__checkbox-text {
         font-size: 12px;
         letter-spacing: 0.36px;
         display: inline;
-        vertical-align:middle ;
+        vertical-align: middle;
     }
+
     .portfolio {
         padding: 60px 0;
     }
-    .portfolio-list  {
+
+    .portfolio-list {
         display: flex;
         flex-direction: column;
         align-items: normal;
     }
+
     .portfolio__filters-list {
         display: flex;
         flex-wrap: wrap;

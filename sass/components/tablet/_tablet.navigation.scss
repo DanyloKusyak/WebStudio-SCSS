@@ -20,7 +20,9 @@
     padding-bottom: 0;
     font-size: inherit;
 
-
+    &__item {
+        margin-left: 50px;
+      }
     &__item--active &__link::after {
         width: 100%;
     }
@@ -28,4 +30,7 @@
     &__link {
         font-size: 14px;
     }
+}
+.navigation-contact-list, .navigation-social-list {
+    display: none;
 }

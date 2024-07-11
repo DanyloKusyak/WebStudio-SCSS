@@ -7,9 +7,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #FFEFBA;
+    background-color: #FFFFFF;
     transform: translateY(-100%);
     transition: transform 0.5s;
+    padding-left: 40px;
 
     &__link {
         color: #222;
@@ -22,27 +23,33 @@
 .navigation.active {
     transform: translateY(0);
     z-index: 5;
+    display: block;
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .navigation-list {
     display: flex;
     flex-direction: column;
-        gap: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        font-size: 24px;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 24px;
+    height: 60%;
 
-    &__item {
-        margin-left: 50px;
-    }
+
 
     &__link {
-        @include font4(24px, 0.28px, normal, 500);
+        @include font4(40px, 0.05px, normal, 500);
         @include font2(Roboto, break-word);
         position: relative;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: $cubic;
+
 
         &::after {
             content: "";
@@ -97,4 +104,76 @@
     100% {
         width: 100%;
     }
+}
+
+.navigation-contact-list {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: $main-text;
+
+    &__item {
+        font-family: 'Roboto';
+        font-size: 34px;
+        letter-spacing: 0.06;
+        color: $blue-back;
+    }
+
+    &__item--email {
+        font-family: 'Roboto';
+        letter-spacing: 0.06;
+        font-size: 24px;
+        color: $main-text;
+    }
+
+    &__item:hover {
+
+        color: $blue-back;
+
+    }
+
+
+}
+
+.navigation-social-list {
+    height: 10%;
+    display: flex;
+    gap: 11px;
+    color: $main-text;
+
+    &__item {
+        font-size: 18px;
+        font-family: 'Roboto';
+        letter-spacing: 0.11px;
+        line-height: 1.22;
+
+
+    }
+
+    &__item:after {
+        height: 22px;
+        width: 11px;
+        border-right: 1px solid $gray-text;
+        opacity: 20%;
+        content: "";
+    }
+
+
+    &__item:hover {
+        color: $blue-back;
+    }
+
+    &__item:last-child:after {
+        height: 0;
+        width: 0;
+        border-right: 0;
+        content: "";
+    }
+
+    &__link {
+        padding-right: 11px;
+        color: $blue-back;
+    }
+
 }
