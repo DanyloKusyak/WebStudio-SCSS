@@ -34,3 +34,6 @@
 .navigation-contact-list, .navigation-social-list {
     display: none;
 }
+.navigation.active {
+    min-height: unset;
+}

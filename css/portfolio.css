@@ -632,6 +632,9 @@ button > span {
   .navigation-contact-list, .navigation-social-list {
     display: none;
   }
+  .navigation.active {
+    min-height: unset;
+  }
   .hero {
     padding: 100px;
   }
@@ -820,6 +823,9 @@ button > span {
   }
   .navigation-contact-list, .navigation-social-list {
     display: none;
+  }
+  .navigation.active {
+    min-height: unset;
   }
   .hero {
     padding: 200px 0;
