@@ -358,7 +358,7 @@ button > span {
 .hero {
   padding: 125px 0;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main_block_bgr.jpeg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/main_block_bgr@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -375,6 +375,11 @@ button > span {
   margin-bottom: 30px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/mobile/main_block_bgr@2x.jpg");
+  }
+}
 .feature {
   padding: 60px 0;
 }
@@ -908,6 +913,7 @@ button > span {
   }
   .hero {
     padding: 100px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/main_block_bgr@1x.jpg");
   }
   .hero__title {
     font-size: 26px;
@@ -915,6 +921,13 @@ button > span {
     line-height: 1.61;
     font-weight: 800;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/tablet/main_block_bgr@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .feature {
     padding: 60px 0;
   }
@@ -1100,6 +1113,7 @@ button > span {
   }
   .hero {
     padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/main_block_bgr@1x.jpg");
   }
   .hero__title {
     font-size: 44px;
@@ -1107,6 +1121,13 @@ button > span {
     line-height: 1.36;
     font-weight: 900;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/desktop/main_block_bgr@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
   .feature {
     padding: 94px 0;
   }

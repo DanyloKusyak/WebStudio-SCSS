@@ -4,7 +4,7 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images/main_block_bgr.jpeg");
+        url("../images/mobile/main_block_bgr@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,4 +17,12 @@
         text-transform: uppercase;
         margin-bottom: 30px;
     }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/mobile/main_block_bgr@2x.jpg");
+  }
 }
