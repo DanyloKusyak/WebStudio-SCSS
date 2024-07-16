@@ -56,7 +56,7 @@
                                 +38 096 111 11 11
                             </a>
                         </li>
-                        <li class="navigation-contact-list__item  navigation-contact-list__item--email" >
+                        <li class="navigation-contact-list__item  navigation-contact-list__item--email">
                             <a href="mailto:info@devstudio.com" class="navigation-contact-list__link">
                                 info@devstudio.com
                             </a>
@@ -155,7 +155,13 @@
                 <ul class="box-list">
                     <li class="box-list__item">
                         <figure class="box-list__figure">
-                            <img src="./images/block1_img1.jpg" alt="Notebook" width="370" class="box-list__img">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/block1_img1@1x.jpg 1x, ./images/desktop/block1_img1@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img src="./images/block1_img1.jpg" alt="Notebook" width="370" class="box-list__img">
+                            </picture>
+
                             <figcaption class="box-list__caption">Десктопні додатки</figcaption>
                         </figure>
                     </li>
@@ -163,7 +169,13 @@
                     <li class="box-list__item">
 
                         <figure class="box-list__figure">
-                            <img src="./images/block1_img2.jpg" alt="ceel" width="370" class="box-list__img">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/block1_img2@1x.jpg 1x, ./images/desktop/block1_img2@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img src="./images/block1_img2.jpg" alt="ceel" width="370" class="box-list__img">
+                            </picture>
+
                             <figcaption class="box-list__caption">Мобільні додатки</figcaption>
                         </figure>
                     </li>
@@ -171,7 +183,15 @@
 
 
                         <figure class="box-list__figure">
-                            <img src="./images/block1_img3.jpg" alt="Tablet" width="370" class="box-list__img">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/block1_img3@1x.jpg 1x, ./images/desktop/block1_img3@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img src="./images/block1_img3.jpg" alt="Tablet" width="370" class="box-list__img">
+
+                            </picture>
+
+
                             <figcaption class="box-list__caption">Дизайнерські рішення</figcaption>
                         </figure>
                     </li>
@@ -186,7 +206,20 @@
                 <h3 class="team__main-title">Наша команда</h3>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/block2_img1.jpg" alt="Ігор Дем'яненко" width="270" class="team-list__img">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/block2_img1@1x.jpg 1x, ./images/desktop/block2_img1@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/tablet/block2_img1@1x.jpg 1x, ./images/tablet/block2_img1@2x.jpg 2x"
+                                media="(min-width: 769px)">
+                            <source
+                                srcset="./images/mobile/block2_img1@1x.jpg 1x, ./images/mobile/block2_img1@2x.jpg 2x"
+                                media="(max-width: 768px)">
+                            <img src="./images/block2_img1.jpg" alt="Ігор Дем'яненко" width="270"
+                                class="team-list__img">
+                        </picture>
+
                         <h6 class="team-list__title">
                             Ігор Дем'яненко
                         </h6>
@@ -225,7 +258,19 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/block2_img2.jpg" alt="Ольга Рєпіна" width="270" class="team-list__img">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/block2_img2@1x.jpg 1x, ./images/desktop/block2_img2@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/tablet/block2_img2@1x.jpg 1x, ./images/tablet/block2_img2@2x.jpg 2x"
+                                media="(min-width: 769px)">
+                            <source
+                                srcset="./images/mobile/block2_img2@1x.jpg 1x, ./images/mobile/block2_img2@2x.jpg 2x"
+                                media="(max-width: 768px)">
+                            <img src="./images/block2_img2.jpg" alt="Ольга Рєпіна" width="270" class="team-list__img">
+                        </picture>
+
                         <h6 class="team-list__title">
                             Ольга Рєпіна
                         </h6>
@@ -264,7 +309,19 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/block2_img3.jpg" alt="Микола Тарасов" width="270" class="team-list__img">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/block2_img3@1x.jpg 1x, ./images/desktop/block2_img3@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/tablet/block2_img3@1x.jpg 1x, ./images/tablet/block2_img3@2x.jpg 2x"
+                                media="(min-width: 769px)">
+                            <source
+                                srcset="./images/mobile/block2_img3@1x.jpg 1x, ./images/mobile/block2_img3@2x.jpg 2x"
+                                media="(max-width: 768px)">
+                            <img src="./images/block2_img3.jpg" alt="Микола Тарасов" width="270" class="team-list__img">
+                        </picture>
+
                         <h6 class="team-list__title">
                             Микола Тарасов
                         </h6>
@@ -303,7 +360,20 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/block2_img4.jpg" alt="Михайло Єрмаков" width="270" class="team-list__img">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/block2_img4@1x.jpg 1x, ./images/desktop/block2_img4@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/tablet/block2_img4@1x.jpg 1x, ./images/tablet/block2_img4@2x.jpg 2x"
+                                media="(min-width: 769px)">
+                            <source
+                                srcset="./images/mobile/block2_img4@1x.jpg 1x, ./images/mobile/block2_img4@2x.jpg 2x"
+                                media="(max-width: 768px)">
+                            <img src="./images/block2_img4.jpg" alt="Михайло Єрмаков" width="270"
+                                class="team-list__img">
+                        </picture>
+
                         <h6 class="team-list__title">
                             Михайло Єрмаков
                         </h6>
