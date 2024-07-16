@@ -1056,6 +1056,7 @@ button > span {
   .portfolio-list {
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
   .portfolio-list__item {
     flex-basis: calc((100% - 60px) / 2);
@@ -1228,6 +1229,7 @@ button > span {
     flex-wrap: unset;
   }
   .portfolio-list {
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
   }
